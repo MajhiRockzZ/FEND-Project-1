@@ -3,10 +3,13 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* HEADER SECTION */
 header {
+  position: sticky;
+  top: 0;
   width: 100%;
   background-color: #ecf0f1;
   height: 60px;
@@ -25,6 +28,7 @@ section {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 60px;
 }
 
 /* CARD SECTION */
@@ -33,7 +37,6 @@ section {
   width: 100%;
   margin: 10px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -97,6 +100,62 @@ section {
   background-color: #808080;
 }
 
+/* PROJECT SECTION */
+.box {
+  max-width: 100%;
+  margin: auto;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+.box .title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.one {
+  order: 3;
+}
+
+.two {
+  order: 4;
+}
+
+.three {
+  order: 5;
+}
+
+/* FOOTER SECTION */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2c3a47;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.16);
+}
+
 @media screen and (min-width: 700px) {
   .card {
     width: 30%;
@@ -104,6 +163,18 @@ section {
 
   .skill {
     width: 60%;
+  }
+
+  .one {
+    width: 30%;
+  }
+
+  .two {
+    width: 30%;
+  }
+
+  .three {
+    width: 30%;
   }
 }
 
