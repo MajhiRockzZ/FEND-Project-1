@@ -1,0 +1,116 @@
+/* MAIN */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER SECTION */
+header {
+  width: 100%;
+  background-color: #ecf0f1;
+  height: 60px;
+  text-align: center;
+  box-shadow: 0px 9px 5px -4px rgba(0, 0, 0, 0.41);
+}
+
+header img {
+  max-width: 50px;
+  height: auto;
+  margin: 5px;
+}
+
+/* MAIN SECTION */
+section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* CARD SECTION */
+.card {
+  order: 1;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.social {
+  padding-bottom: 20px;
+}
+
+.social a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+/* SKILLS SECTION */
+.skill {
+  width: 100%;
+  order: 2;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.skill .container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.bar {
+  text-align: right;
+  line-height: 40px;
+  color: white;
+}
+
+.html {
+  width: 90%;
+  background-color: #4caf50;
+}
+
+.css {
+  width: 80%;
+  background-color: #2196f3;
+}
+
+.js {
+  width: 65%;
+  background-color: #f44336;
+}
+
+.jquery {
+  width: 60%;
+  background-color: #808080;
+}
+
+@media screen and (min-width: 700px) {
+  .card {
+    width: 30%;
+  }
+
+  .skill {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  section {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
